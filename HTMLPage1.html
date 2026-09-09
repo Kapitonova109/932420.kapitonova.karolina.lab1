@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<!-- Лабораторная работа номер 1 - страница "О себе" -->
+<!--  Каролина Капитонова -->
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>О себе</title>
+
+    <!-- Здесь все стили для страницы -->
+    <style>
+        /* Настройки для всей страницы: шрифт, отступы, цвета */
+        body {
+            font-family: Arial;
+            margin: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        /* Стили для шапки сайта */
+        header {
+            background-color: orange;
+            color: white;
+            padding: 15px;
+        }
+
+        /* Стили для блоков с текстом (Навыки, Проекты, Связь) */
+        section {
+            background-color: #f5f5f5;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Стили для нижней части сайта */
+        footer {
+            background-color: orange;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Рамка вокруг фото */
+        img {
+            border: 2px solid orange;
+        }
+
+        /* Поля формы: каждое с новой строки и одинаковой ширины */
+        input, textarea {
+            display: block;
+            width: 90%;
+            margin: 5px 0;
+            padding: 5px;
+        }
+
+        /* Кнопка отправки формы */
+        button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка с именем/фамилией и заголовком страницы -->
+    <header>
+        <h1>Каролина Капитонова</h1>
+        <p>Предприниматель и стартапер</p>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+
+        <!-- Боковая панель с краткой информацией -->
+        <aside style="float:right; width:200px; padding:10px; background-color:#ffe9cf;">
+            <h3>Ключевая ценность</h3>
+            <p>Создание продуктов, которые упрощают жизнь.</p>
+        </aside>
+
+        <!-- Изображение.
+             src - ссылка на картинку
+             alt - текст, если картинка не откроется
+             width и height - ширина и высота картинки -->
+        <img src="myphoto.jpg" alt="Мое изображение" width="407" height="250">
+
+        <!-- Секция "Навыки" - маркированный список -->
+        <section>
+            <h2>Навыки</h2>
+            <ul>
+                <li>Маркетинг</li>
+                <li>Управление проектами</li>
+                <li>Финансовое планирование</li>
+                <li>Анализ рынка</li>
+            </ul>
+        </section>
+
+        <!-- Секция "Проекты" - нумерованный список из 4 пунктов -->
+        <section>
+            <h2>Проекты</h2>
+            <ol>
+                <li>Приложение для заметок с напоминаниями</li>
+                <li>Платформа для обмена учебными материалами</li>
+                <li>Сайт-визитка для малого бизнеса</li>
+                <li>Сервис для поиска репетиторов</li>
+            </ol>
+        </section>
+
+        <!-- Этот блок нужен, чтобы боковая панель выше не мешала следующему тексту -->
+        <div style="clear:both;"></div>
+
+        <!-- Форма обратной связи: Имя, Email, Сообщение, кнопка отправки -->
+        <section>
+            <h2>Связь</h2>
+            <form>
+                <label>Имя</label>
+                <input type="text" name="name" placeholder="Введите ваше имя">
+
+                <label>Email</label>
+                <input type="email" name="email" placeholder="example@mail.com">
+
+                <label>Сообщение</label>
+                <textarea name="message" placeholder="Напишите ваше сообщение..."></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Нижняя часть страницы с копирайтом и годом -->
+    <footer>
+        <p>&copy; 2026 Каролина Капитонова</p>
+    </footer>
+
+</body>
+</html>
