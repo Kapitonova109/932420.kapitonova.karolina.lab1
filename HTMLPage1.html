@@ -71,17 +71,19 @@
     <!-- Основной контент -->
     <main>
 
+        <!-- Боковая панель: h3 заменён на h2 для соблюдения иерархии заголовков -->
         <!-- Боковая панель с краткой информацией -->
         <aside style="float:right; width:200px; padding:10px; background-color:#ffe9cf;">
             <h2>Ключевая ценность</h2>
             <p>Создание продуктов, которые упрощают жизнь.</p>
         </aside>
 
+        <!-- Изображение: уточнён alt, путь указывает на папку images -->
         <!-- Изображение.
              src - ссылка на картинку
              alt - текст, если картинка не откроется
              width и height - ширина и высота картинки -->
-        <img src="myphoto.jpg" alt="Мое изображение" width="407" height="250">
+        <img src="images/myphoto.jpg" alt="Иллюстрация стартапа: идея, рост и запуск" width="407" height="250">
 
         <!-- Секция "Навыки" - маркированный список -->
         <section>
@@ -108,17 +110,18 @@
         <!-- Этот блок нужен, чтобы боковая панель выше не мешала следующему тексту, если картинка не откроется -->
         <div style="clear:both;"></div>
 
+        <!-- Форма: добавлены for и id для связи подписей с полями -->
         <!-- Форма обратной связи: Имя, Email, Сообщение, кнопка отправки -->
         <section>
             <h2>Связь</h2>
             <form>
-                <label>Имя</label>
+                <label for="name">Имя</label>
                 <input type="text" id="name" name="name" placeholder="Введите ваше имя">
 
-                <label>Email</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="example@mail.com">
 
-                <label>Сообщение</label>
+                <label for="message">Сообщение</label>
                 <textarea id="message" name="message" placeholder="Напишите ваше сообщение..."></textarea>
 
                 <button type="submit">Отправить</button>
