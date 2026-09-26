@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<!-- Лабораторная работа 2, вариант 16 - страница "О себе" со стилями -->
+<!-- Каролина Капитонова -->
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>О себе</title>
+
+    <!-- Способ 1: внешний файл со всеми основными стилями -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Способ 2: внутренний блок style, одно правило - ссылки в подвале -->
+    <style>
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<!-- Способ 3: inline-стиль cursor: pointer для всех интерактивных элементов -->
+<body style="cursor: pointer;">
+
+    <!-- Шапка с именем, фамилией и подзаголовком -->
+    <header>
+        <h1>Каролина Капитонова</h1>
+        <p>Предприниматель и стартапер</p>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+
+        <!-- Боковая панель с краткой информацией -->
+        <aside>
+            <h2>Ключевая ценность</h2>
+            <p>Создание продуктов, которые упрощают жизнь.</p>
+        </aside>
+
+        <!-- Изображение -->
+        <img src="images/myphoto.jpg"
+             alt="Иллюстрация стартапа: идея, рост и запуск"
+             width="407" height="250">
+
+        <!-- Секция "Навыки" - маркированный список, внутри бейдж (position: absolute) -->
+        <section class="skills">
+            <span class="badge">Главное</span>
+            <h2>Навыки</h2>
+            <ul>
+                <li>Маркетинг</li>
+                <li>Управление проектами</li>
+                <li>Финансовое планирование</li>
+                <li>Анализ рынка</li>
+            </ul>
+        </section>
+
+        <!-- Секция "Проекты" - нумерованный список из 4 пунктов -->
+        <section class="projects">
+            <h2>Проекты</h2>
+            <ol>
+                <li>Приложение для заметок с напоминаниями</li>
+                <li>Платформа для обмена учебными материалами</li>
+                <li>Сайт-визитка для малого бизнеса</li>
+                <li>Сервис для поиска репетиторов</li>
+            </ol>
+        </section>
+
+        <!-- Блок, чтобы боковая панель не мешала форме -->
+        <div class="clear"></div>
+
+        <!-- Форма обратной связи: Имя, Email, Сообщение, кнопка отправки -->
+        <section>
+            <h2>Связь</h2>
+            <form>
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com">
+
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" placeholder="Напишите ваше сообщение..."></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Нижняя часть страницы: ссылки и копирайт -->
+    <footer>
+        <p>
+            <a href="#">Наверх</a>
+            <a href="https://vk.com/" target="_blank" rel="noopener">ВКонтакте</a>
+            <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+        </p>
+        <p>&copy; 2026 Каролина Капитонова</p>
+    </footer>
+
+</body>
+</html>
