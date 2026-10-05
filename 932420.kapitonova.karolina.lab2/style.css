@@ -171,6 +171,7 @@ footer {
     }
 
     footer a:hover {
+        color: var(--peach);
         text-decoration: underline;
     }
 
