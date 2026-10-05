@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- Лабораторная работа 2, вариант 16 - страница "О себе" со стилями -->
 <!-- Каролина Капитонова -->
 <html lang="ru">
@@ -18,8 +18,7 @@
         }
     </style>
 </head>
-<!-- Способ 3: inline-стиль cursor: pointer для всех интерактивных элементов -->
-<body style="cursor: pointer;">
+<body>
 
     <!-- Шапка с именем, фамилией и подзаголовком -->
     <header>
@@ -80,7 +79,8 @@
                 <label for="message">Сообщение</label>
                 <textarea id="message" name="message" placeholder="Напишите ваше сообщение..."></textarea>
 
-                <button type="submit">Отправить</button>
+                <!-- Способ 3: inline-стиль на одном интерактивном элементе -->
+                <button type="submit" style="cursor: pointer;">Отправить</button>
             </form>
         </section>
 
